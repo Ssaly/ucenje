@@ -49,18 +49,11 @@ func main() {
 
 	fmt.Printf("Which outfield player appeared in the Champions League final in three different decades? ")
 	fmt.Scan(&answer, &answer2)
-	if answer+" "+answer2 == "Ryan Giggs" {
-		fmt.Println("Correct!")
-		score += 1
-	} else if answer+" "+answer2 == "ryan giggs" {
-		fmt.Println("Correct!")
-		score += 1
-	} else if answer+" "+answer2 == "ryan gigs" {
+	if answer+" "+answer2 == "Ryan Giggs" || answer+" "+answer2 == "ryan giggs" || answer+" "+answer2 == "ryan gigs" {
 		fmt.Println("Correct!")
 		score += 1
 	} else {
 		fmt.Println("Incorrect!")
-
 	}
 
 	fmt.Printf("You scored %v out of %v.", score, num_que)
