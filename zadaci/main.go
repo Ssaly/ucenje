@@ -1,23 +1,21 @@
-package	main
+package main
 
 import (
 	"fmt"
 )
 
-func zadatak1() {
+func main() {
 
-fmt.Println("Exercise 001")
+	fmt.Println("Exercise 001")
 
-res, _ := suma(5, 5)
+	res, _ := suma(5, 5)
 
-
-fmt.Println(res)
+	fmt.Println(res)
 
 }
 
 func suma(a, b int) (int, error) {
 
-	return a+b, nil 
+	return a + b, nil
 
 }
-
